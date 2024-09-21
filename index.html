@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Ticket Sales</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/daf73e6806.js" crossorigin="anonymous"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+          fontFamily: {
+            raleway : ["Raleway", "sans-serif"],
+            inter : ["Inter", "sans-serif"]
+          },
+          backgroundImage : {
+            bannerBg : "url('./images/banner.png')",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+
+    <!-- header section starts here -->
+    <header class="font-raleway  w-[90%] mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <a class="btn btn-ghost text-xl font-extrabold">PH-Ticket</a>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-[#030712ba] hover:transition-all hover:ease-in-out font-semibold">Home</a></li>
+                <li><a class="text-[#030712ba] transition-all ease-in-out font-semibold">About</a></li>
+                <li><a class="text-[#030712ba] transition-all ease-in-out font-semibold">Destination</a></li>
+                <li><a class="text-[#030712ba] transition-all ease-in-out font-semibold">Search</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-end">
+              <button class="btn bg-[#1cd10063] border-[#1cd100] border-2 h-[2rem] min-h-0">
+                <p class="text-[#1DD100] text-sm">Bus</p>
+                <i class="fa-solid fa-van-shuttle text-[#1DD100]"></i>
+              </button>
+
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                  <li><a class="text-[#030712ba] hover:transition-all hover:ease-in-out font-semibold">Home</a></li>
+                  <li><a class="text-[#030712ba] transition-all ease-in-out font-semibold">About</a></li>
+                  <li><a class="text-[#030712ba] transition-all ease-in-out font-semibold">Destination</a></li>
+                  <li><a class="text-[#030712ba] transition-all ease-in-out font-semibold">Search</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+    </header>
+
+
+    <!-- banner section starts here -->
+
+    <section class="w-[90%] mx-auto relative">
+
+        <div
+  class="hero lg:h-[500px] h-auto bg-bannerBg rounded-xl bg-cover bg-center bg-no-repeat">
+  <div class="hero-content text-neutral-content text-center">
+    <div class="">
+      <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with</h1>
+      <h1 class="mb-5 text-5xl font-bold text-[#1DD100]">P Paribahan</h1>
+      <p class="mb-5 w-4/5 mx-auto">
+        Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+      </p>
+      <button class="btn btn-primary border-none bg-[#1DD100] text-black font-bold">Buy Ticket</button>
+    </div>
+  </div>
+</div>
+
+<div class="lg:absolute static -bottom-5 flex lg:flex-row flex-col justify-around items-center w-full mx-auto">
+    <div class="bg-white flex justify-center items-center gap-2 p-3 rounded-2xl border-b-2 border-orange-400">
+        <div><i class="fa-solid fa-users fa-2x text-[#1DD100]"></i></div>
+        <div class="text-center">
+            <h3 class="text-xl font-bold">500k+</h3>
+            <p class="text-[#00000063]">Registered users</p>
+        </div>
+    </div>
+    <div class="bg-white flex justify-center items-center gap-2 p-3 rounded-2xl border-b-2 border-orange-400">
+        <div><i class="fa-solid fa-ticket fa-2x text-[#1DD100]"></i></div>
+        <div class="text-center">
+            <h3 class="text-xl font-bold">1.7 lacks+</h3>
+            <p class="text-[#00000063]">Ticket sold</p>
+        </div>
+    </div>
+    <div class="bg-white flex justify-center items-center gap-2 p-3 rounded-2xl border-b-2 border-orange-400">
+        <div><i class="fa-solid fa-truck-moving fa-2x text-[#1DD100]"></i></i></div>
+        <div class="text-center">
+            <h3 class="text-xl font-bold">80k+</h3>
+            <p class="text-[#00000063]">Rental Partners</p>
+        </div>
+    </div>
+
+</div>
+    </section>
+    <!-- banner section ends here -->
+    <!-- header section ends here -->
+
+
+    <main class="w-[90%] mx-auto mt-12">
+
+
+        <!-- coupon section starts here -->
+
+        <section class="py-6">
+
+            <h3 class="text-2xl font-bold text-center mb-8">Best offers for you</h3>
+
+            <div class="w-[85%] mx-auto flex lg:flex-row flex-col justify-between items-center gap-8">
+                <div class="flex justify-center items-center px-16 py-6 bg-[#1DD100] rounded-2xl">
+                    <div class="border-r-2 border-dashed pr-3">
+                        <h4 class="text-xl font-bold">15% OFF</h4>
+                        <p class="text-sm font-bold">on your next purchase</p>
+                        <p class="text-sm text-[#030712ba]">use by january 2024</p>
+                    </div>
+                    <div class="pl-3">
+                        <h4 class="text-xl font-bold">NEW15</h4>
+                        <p class="text-sm text-[#030712ba]">Coupon code</p>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-center items-center px-16 py-6 bg-[#F78C9C] rounded-2xl">
+                    <div class="border-r-2 border-dashed pr-3">
+                        <h4 class="text-xl font-bold">20% OFF</h4>
+                        <p class="text-sm font-bold">on your next purchase</p>
+                        <p class="text-sm text-[#030712ba]">use by january 2024</p>
+                    </div>
+                    <div class="pl-3">
+                        <h4 class="text-xl font-bold">Couple 20</h4>
+                        <p class="text-sm text-[#030712ba]">Coupon code</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex justify-center mt-8 hover:transition-all hover:ease-in-out">
+                <button class="btn bg-transparent border-[#1DD100] text-[#1DD100]">
+                    See All Offers
+                </button>
+            </div>
+
+        </section>
+
+        <!-- coupon section ends here -->
+    </main>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
