@@ -303,22 +303,22 @@
 
                  <div class="col-span-12 grid grid-cols-10 gap-6 items-center text-center">
                    <p class="col-span-1">A</p>
-                  <button class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">A1</button>
-                  <button class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">A2</button>
+                  <button id="a1-btn" class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">A1</button>
+                  <button id="a2-btn" class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">A2</button>
                   <p class="col-span-1"></p>
-                  <button class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">A3</button>
-                  <button class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">A4</button>
+                  <button id="a3-btn" class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">A3</button>
+                  <button id="a4-btn" class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">A4</button>
                  </div>
 
                  <!-- row 2 -->
 
                  <div class="col-span-12 grid grid-cols-10 gap-6 items-center text-center">
-                  <p class="col-span-1">b</p>
-                 <button class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">B1</button>
-                 <button class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">B2</button>
+                  <p class="col-span-1">B</p>
+                 <button id="b1-btn" class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">B1</button>
+                 <button id="b2-btn" class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">B2</button>
                  <p class="col-span-1"></p>
-                 <button class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">B3</button>
-                 <button class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">B4</button>
+                 <button id="b3-btn" class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">B3</button>
+                 <button id="b4-btn" class="col-span-2 btn hover:bg-[#111] hover:text-[#fff] transition-colors duration-200 ease-in-out">B4</button>
                 </div>
 
                 <!-- row 3 -->
@@ -413,28 +413,22 @@
               </section>
             </div>
 
-
-          
-
-
-
-            <!-- middle part border -->
-
-      
-
             <!-- right part -->
             
             <div class="col-span-4 space-y-3 border-l-2 border-dashed pl-6">
               <h3 class="text-xl font-bold">Select Your Seat</h3>
               <div class="border-b-2 border-dashed"></div>
 
-              <div class="bg-[#F7F8F8] rounded-xl p-3 space-y-3">
+              <div id="seat-price-list" class="bg-[#F7F8F8] rounded-xl p-3 space-y-3">
                 <div class="flex justify-between items-center p-2">
                   <p class="flex justify-center items-center gap-1 font-bold">Seat <span class="bg-green-500 text-[#fff] py-0 px-1 rounded-2xl">0</span></p>
                   <p class="font-bold">Class</p>
                   <p class="font-bold">Price</p>     
-                  </div>
+                  </div>  
                   <div class="border-b-2 border-dashed"></div>
+                  <div id="seat-price">
+                    <h3 id="text-seat" class="font-bold text-gray-600 text-center text-2xl">No Seat Selected</h3>
+                  </div>
                
 
                 <div class="flex justify-between items-center p-1">
@@ -504,7 +498,7 @@
     </main>
 
 
-
+    <script src="./feature.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
